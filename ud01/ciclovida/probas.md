@@ -1,6 +1,6 @@
-Yo en vez de ejecutar el java Suma * * * *
+**EN VEZ DE EJECUTAR "java Suma"**
 
-Tengo que ejecutar java Suma.java * * * *
+**TIENES QUE EJECUTAR java Suma.java**
 
 ### Proba 1 
 
