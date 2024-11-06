@@ -1,0 +1,3 @@
+Clonar repositorio profe
+Crear rama en git
+Comandos necesarios para crear rama en git
