@@ -1,4 +1,4 @@
-# Comandos Utilizados.
+# Comandos Utilizados Ejercicio 1.
 
 ### Moverse a la carpeta destino
 
@@ -60,5 +60,53 @@
 ### Editamos el fichero actividades.txt
 
     nano actividades.txt
+
+### Cogemos los cambios que hicimos
+
+    git add .
+
+### Hacemos el commit de los cambios
+
+    git commit -m "Commit final"
+
+### Hacemos el push
+
+    git push
+
+# Comandos Utilizados Ejercicio 2.
+
+### Crear repositorio nuevo
+
+    mkdir pagina_web
+
+### Mostrar contenido de la carpeta
+
+    ls /pagina_web
+
+### Ver el estado del repositorio.
+
+    git status
+
+    Vemos que al ejecutar el comando que tenemos el repositorio desactualizado o todavia no lo hemos pusheado.
+
+### Creamos un fichero index.html con un codigo.
+
+    nano index.html
+
+### Cogemos los cambios que hicimos
+
+    git add .
+
+### Hacemos el commit de los cambios
+
+    git commit -m "Primera practica html"
+
+### Vemos el estado del repositorio.
+
+    git status
+
+
+
+
 
 
