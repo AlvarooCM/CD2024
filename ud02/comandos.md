@@ -105,6 +105,21 @@
 
     git status
 
+    Vemos que el repositorio esta actualizado.
+
+### Cambiamos el contenido del index
+
+    nano index.html
+
+### Volvemos a hacer el commit
+
+    git commit -m "Añadidas 3 ciudades que visitar"
+
+### Ver historial de commits
+
+    git log
+
+
 
 
 
