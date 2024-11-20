@@ -253,4 +253,6 @@
 
 ### Comitea los cambios con el mensaje “Añadida bibliografía de harry potter”.
 
+    git commit -m "Añadida bibliografia de harry potter"
+
     
