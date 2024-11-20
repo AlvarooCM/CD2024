@@ -226,3 +226,29 @@
 ### Hacer un commit con el mensaje “Capitulo 2 modificado”
 
     git commit -m "Capitulo 2 modificado"
+
+### Crea una nueva rama bibliografia y muestra las ramas del respositorio.
+
+    git branch bibliografia
+
+    git branch -a
+
+### Cambia a la rama bibliografía y crea el fichero bibliografía.txt y añade la siguiente referencia
+
+    nano bibliografia.txt
+
+### Comitea los cambios con el mensaje “Añadida primera referencia bibliográfica”.
+
+    git commit -m "Añadida primera referencia bibliografia"
+
+### Fusiona la rama bibliografía con la rama master y eliminar la rama bibliografía.
+
+    git merge bibliografia main
+
+
+
+### Crea la rama harrypotter. En esta rama modifica el fichero bibliografía.txt para que contenga las siguientes referencias.
+
+    git branch harrypotter
+
+    nano bibliografia.txt
