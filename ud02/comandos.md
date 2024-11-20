@@ -245,10 +245,12 @@
 
     git merge bibliografia main
 
-
-
 ### Crea la rama harrypotter. En esta rama modifica el fichero bibliografía.txt para que contenga las siguientes referencias.
 
     git branch harrypotter
 
     nano bibliografia.txt
+
+### Comitea los cambios con el mensaje “Añadida bibliografía de harry potter”.
+
+    
