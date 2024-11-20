@@ -210,19 +210,4 @@
     git add *
     Ignora las rutas por el .gitignore
 
-### Hacer un commit de los cambios con el mensaje “Añadido capitulo 2”.
-
-    git commit -m "Añadido capitulo 2"
-
-### Modificar el fichero capitulo2.txt 
-
-    nano capitulo2.txt
-
-### Ver y explicar qué ha cambiado
-
-    git status
-    Cambió el contenido del fichero del capitulo2
-
-### Hacer un commit con el mensaje “Capitulo 2 modificado”
-
-    git commit -m "Capitulo 2 modificado"
+### 
