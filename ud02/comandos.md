@@ -210,4 +210,47 @@
     git add *
     Ignora las rutas por el .gitignore
 
-### 
+### Hacer un commit de los cambios con el mensaje “Añadido capitulo 2”.
+
+    git commit -m "Añadido capitulo 2"
+
+### Modificar el fichero capitulo2.txt 
+
+    nano capitulo2.txt
+
+### Ver y explicar qué ha cambiado
+
+    git status
+    Cambió el contenido del fichero del capitulo2
+
+### Hacer un commit con el mensaje “Capitulo 2 modificado”
+
+    git commit -m "Capitulo 2 modificado"
+
+### Crea una nueva rama bibliografia y muestra las ramas del respositorio.
+
+    git branch bibliografia
+
+    git branch -a
+
+### Cambia a la rama bibliografía y crea el fichero bibliografía.txt y añade la siguiente referencia
+
+    nano bibliografia.txt
+
+### Comitea los cambios con el mensaje “Añadida primera referencia bibliográfica”.
+
+    git commit -m "Añadida primera referencia bibliografia"
+
+### Fusiona la rama bibliografía con la rama master y eliminar la rama bibliografía.
+
+    git merge bibliografia main
+
+### Crea la rama harrypotter. En esta rama modifica el fichero bibliografía.txt para que contenga las siguientes referencias.
+
+    git branch harrypotter
+
+    nano bibliografia.txt
+
+### Comitea los cambios con el mensaje “Añadida bibliografía de harry potter”.
+
+    git commit -m "Añadida bibliografia de harry potter"
