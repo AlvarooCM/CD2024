@@ -227,6 +227,8 @@
 
     git commit -m "Capitulo 2 modificado"
 
+# 2. Ramas GIT
+
 ### Crea una nueva rama bibliografia y muestra las ramas del respositorio.
 
     git branch bibliografia
@@ -254,3 +256,51 @@
 ### Comitea los cambios con el mensaje “Añadida bibliografía de harry potter”.
 
     git commit -m "Añadida bibliografia de harry potter"
+
+# 3. Repositorios Remotos GIT
+
+### Crea un repositorio en GitHub con el nombre libro-git. Añádelo como url remota en nuestro repositorio local de libro creado en el ejercicio anterior.
+
+    git clone https://github.com/AlvarooCM/Libro-git.git
+
+### Añade todo lo que tenemos del repositorio libro al repositorio remoto y comprueba que los cambios están subidos correctamente.
+
+### Colabora en el repositorio remoto de otro compañero. Clona su repositorio. Añade el fichero autores.txt que contenga tu nombre y tu correo electrónico. Haz un commit y sube los cambios al repositorio remoto de tu compañero.
+
+    git clone https://github.com/Alejandra-cm06/libro-git.git
+
+    nano autores.txt
+
+### Cuando un compañero/a haya realizado el paso anterior en tu repositorio remoto, sincroniza tu repositorio en local. El resultado debe ser que en local debes tener ese fichero autores.txt.   
+
+    git pull https://github.com/AlvarooCM/Libro-git.git
+
+### Modifica ese fichero, cambiando el nombre de tu compañero/a por el tuyo y añadiendo la fecha y la hora donde lo realizas. Sube los cambios al repositorio remoto.
+
+    git add .
+
+    git commit -m "Añadiendo mi nombre y hora"
+
+    git push
+
+# Ejercicio 4
+
+### Crear una nueva rama llamada autoria y cambiate a ella.
+
+    git branch autoria
+
+### Añadir el nombre del usuario (a23…) y su correo al fichero autores.txt.
+
+    nano autores.txt
+
+### Haz commit del mensaje
+
+    git commit -m "Commit del mensaje"
+
+### Subir los cambios de la rama autoria al repositorio remoto en GitHub.
+
+    git push origin autoria
+
+### Visualiza en el repositorio remoto la aparición de la rama.
+
+    
