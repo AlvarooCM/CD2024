@@ -303,4 +303,3 @@
 
 ### Visualiza en el repositorio remoto la aparición de la rama.
 
-    
