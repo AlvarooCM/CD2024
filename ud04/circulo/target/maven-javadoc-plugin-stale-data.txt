@@ -1,0 +1,45 @@
+@options
+@packages
+-encoding
+'UTF-8'
+-protected
+--release
+17
+-sourcepath
+'/home/vagrant/Desktop/CD2024/ud04/circulo/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/vagrant/Desktop/CD2024/ud04/circulo/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'circulo 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'circulo 1.0-SNAPSHOT API'
+circulo
+/home/vagrant/Desktop/CD2024/ud04/circulo/src/main/java = 1742977221624
+/home/vagrant/Desktop/CD2024/ud04/circulo/target/site/apidocs/allpackages-index.html = 1742979623971
+/home/vagrant/Desktop/CD2024/ud04/circulo/target/site/apidocs/copy.svg = 1742979623990
+/home/vagrant/Desktop/CD2024/ud04/circulo/target/site/apidocs/tag-search-index.js = 1742979623972
+/home/vagrant/Desktop/CD2024/ud04/circulo/target/site/apidocs/index-all.html = 1742979623977
+/home/vagrant/Desktop/CD2024/ud04/circulo/target/site/apidocs/allclasses-index.html = 1742979623969
+/home/vagrant/Desktop/CD2024/ud04/circulo/target/site/apidocs/link.svg = 1742979623990
+/home/vagrant/Desktop/CD2024/ud04/circulo/target/site/apidocs/type-search-index.js = 1742979623971
+/home/vagrant/Desktop/CD2024/ud04/circulo/target/site/apidocs/search.js = 1742979623991
+/home/vagrant/Desktop/CD2024/ud04/circulo/target/site/apidocs/overview-tree.html = 1742979623962
+/home/vagrant/Desktop/CD2024/ud04/circulo/target/site/apidocs/package-search-index.js = 1742979623971
+/home/vagrant/Desktop/CD2024/ud04/circulo/target/site/apidocs/search.html = 1742979623979
+/home/vagrant/Desktop/CD2024/ud04/circulo/target/site/apidocs/member-search-index.js = 1742979623971
+/home/vagrant/Desktop/CD2024/ud04/circulo/target/site/apidocs/stylesheet.css = 1742979623987
+/home/vagrant/Desktop/CD2024/ud04/circulo/target/site/apidocs/script.js = 1742979623987
+/home/vagrant/Desktop/CD2024/ud04/circulo/target/site/apidocs/search-page.js = 1742979623992
+/home/vagrant/Desktop/CD2024/ud04/circulo/target/site/apidocs/element-list = 1742979623948
+/home/vagrant/Desktop/CD2024/ud04/circulo/target/site/apidocs/index.html = 1742979623979
+/home/vagrant/Desktop/CD2024/ud04/circulo/target/site/apidocs/module-search-index.js = 1742979623971
+/home/vagrant/Desktop/CD2024/ud04/circulo/target/site/apidocs/help-doc.html = 1742979623986

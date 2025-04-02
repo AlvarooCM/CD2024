@@ -1,0 +1,22 @@
+-encoding
+'UTF-8'
+-protected
+--release
+17
+-sourcepath
+'/home/vagrant/Desktop/CD2024/ud04/javadoc2/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2025. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/vagrant/Desktop/CD2024/ud04/javadoc2/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'javadoc2 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'javadoc2 1.0-SNAPSHOT API'
