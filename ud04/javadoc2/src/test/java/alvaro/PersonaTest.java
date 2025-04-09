@@ -1,37 +1,41 @@
 package alvaro;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
-public class PersonaTest {
-    
-    @Test
-    public void testConstrucorAndGetters(){
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-        Persona persona = new Persona("Alvaro", 20);
+/**
+ * Pruebas unitarias para la clase Persona.
+ */
+public class PersonaTest {
+
+    private static final int EDAD = 20;
+
+    @Test
+    public void testConstructorAndGetters() {
+        Persona persona = new Persona("Alvaro", EDAD);
 
         assertEquals("Alvaro", persona.getNombre());
-        assertEquals(20, persona.getEdad());
+        assertEquals(EDAD, persona.getEdad());
     }
 
     @Test
-    public void testSetters(){
-
-        Persona persona = new Persona("Alvaro", 20);
+    public void testSetters() {
+        Persona persona = new Persona("Alvaro", EDAD);
 
         persona.setNombre("Nombre1");
-        persona.setEdad(20);
+        persona.setEdad(EDAD);
 
         assertEquals("Nombre1", persona.getNombre());
-        assertEquals(20, persona.getEdad());
+        assertEquals(EDAD, persona.getEdad());
     }
 
     @Test
-    public void testImprimirDetalles(){
+    public void testImprimirDetalles() {
+        Persona persona = new Persona("Alvaro", EDAD);
 
-        Persona persona = new Persona("Alvaro", 20);
-
-        assertEquals("Nombre: "+persona.getNombre()+
-                    "\nEdad: "+persona.getEdad(), persona.imprimirDetalles());
+        assertEquals("Nombre: " + persona.getNombre()
+                + "\nEdad: " + persona.getEdad(), persona.imprimirDetalles());
     }
 }
+

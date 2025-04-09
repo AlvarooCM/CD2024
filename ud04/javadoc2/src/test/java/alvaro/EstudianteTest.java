@@ -1,82 +1,75 @@
 package alvaro;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+/**
+ * Pruebas unitarias para la clase Estudiante.
+ */
 public class EstudianteTest {
-    
+
+    private static final int EDAD = 20;
+    private static final double CALIFICACION_ALTA = 7.6;
+    private static final double CALIFICACION_BAJA = 3.0;
+    private static final int EDAD_ESCOLAR = 5;
+
     @Test
-    public void testConstructorAndGetters(){
+    public void testConstructorAndGetters() {
+        Estudiante estudiante = new Estudiante("Alvaro", EDAD);
+        estudiante.setCalificacion(CALIFICACION_ALTA);
 
-        Estudiante estudiante = new Estudiante("Alvaro", 20);
-
-        estudiante.setCalificacion(7.6);
         assertEquals("Alvaro", estudiante.getNombre());
-        assertEquals(20, estudiante.getEdad());
-        assertEquals(7.6, estudiante.getCalificacion());
+        assertEquals(EDAD, estudiante.getEdad());
+        assertEquals(CALIFICACION_ALTA, estudiante.getCalificacion());
     }
 
-    
     @Test
-    public void testSetters(){
-
-        Estudiante estudiante = new Estudiante("Alvaro", 20);
+    public void testSetters() {
+        Estudiante estudiante = new Estudiante("Alvaro", EDAD);
 
         estudiante.setNombre("Nombre1");
-        estudiante.setEdad(20);
-        estudiante.setCalificacion(7.6);
+        estudiante.setEdad(EDAD);
+        estudiante.setCalificacion(CALIFICACION_ALTA);
 
         assertEquals("Nombre1", estudiante.getNombre());
-        assertEquals(20, estudiante.getEdad());
-        assertEquals(7.6, estudiante.getCalificacion());
+        assertEquals(EDAD, estudiante.getEdad());
+        assertEquals(CALIFICACION_ALTA, estudiante.getCalificacion());
     }
 
-
     @Test
-    public void testAprobo(){
+    public void testAprobo() {
+        Estudiante estudiante = new Estudiante("Alvaro", EDAD);
 
-        Estudiante estudiante = new Estudiante("Alvaro", 20);
-
-        estudiante.setCalificacion(7.6);
+        estudiante.setCalificacion(CALIFICACION_ALTA);
         assertEquals(true, estudiante.aprobo());
 
-
-        estudiante.setCalificacion(3.0);
+        estudiante.setCalificacion(CALIFICACION_BAJA);
         assertEquals(false, estudiante.aprobo());
     }
 
-
     @Test
-    public void testEdadEscolar(){
-
-        Estudiante estudiante = new Estudiante("Alvaro", 20);
-
+    public void testEdadEscolar() {
+        Estudiante estudiante = new Estudiante("Alvaro", EDAD);
         assertEquals(1, estudiante.edadEscolar());
     }
 
-
     @Test
-    public void testEsUniversitario(){
-
-        Estudiante estudiante = new Estudiante("Alvaro", 20);
-
+    public void testEsUniversitario() {
+        Estudiante estudiante = new Estudiante("Alvaro", EDAD);
         assertEquals(true, estudiante.esUniversitario());
 
-        estudiante.setEdad(5);
+        estudiante.setEdad(EDAD_ESCOLAR);
         assertEquals(false, estudiante.esUniversitario());
     }
 
-
     @Test
-    public void testImprimirInformacion(){
-
-        Estudiante estudiante = new Estudiante("Alvaro", 20);
-
-        estudiante.setCalificacion(7.6);
-
+    public void testImprimirInformacion() {
+        Estudiante estudiante = new Estudiante("Alvaro", EDAD);
+        estudiante.setCalificacion(CALIFICACION_ALTA);
         assertEquals("Nombre: Alvaro, Edad: 20, Calificación: 7.6", estudiante.imprimirInformacion());
-        estudiante.setCalificacion(3.0);
-      
 
+        estudiante.setCalificacion(CALIFICACION_BAJA);
+        assertEquals("Nombre: Alvaro, Edad: 20, Calificación: 3.0", estudiante.imprimirInformacion());
     }
 }

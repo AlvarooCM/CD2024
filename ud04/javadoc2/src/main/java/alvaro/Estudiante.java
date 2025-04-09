@@ -1,21 +1,24 @@
 package alvaro;
 
-
 /**
- * Clase Estudiante
- * Esta clase representa un estudiante con nombre, edad y calificación.
+ * Clase que representa un estudiante con nombre, edad y calificación.
  */
 public class Estudiante {
+
+    private static final double CALIFICACION_MINIMA = 5.0;
+    private static final int DIVISOR_EDAD_ESCOLAR = 12;
+    private static final int EDAD_UNIVERSITARIA = 18;
 
     private String nombre;
     private int edad;
     private double calificacion;
 
     /**
-    * Establece el valor de las variables del objeto estudiante
-    * @param nombre  Indica el nombre del objeto estudiante
-    * @param edad -> Indica la edad del objeto estudiante
-    */
+     * Constructor que inicializa el estudiante con nombre y edad.
+     *
+     * @param nombre Nombre del estudiante.
+     * @param edad   Edad del estudiante.
+     */
     public Estudiante(String nombre, int edad) {
         this.nombre = nombre;
         this.edad = edad;
@@ -23,87 +26,93 @@ public class Estudiante {
     }
 
     /**
-     * Establece el valor de calificacion 0.0
-     * @param calificacion  Valor de calificacion 0.0
+     * Establece la calificación del estudiante.
+     *
+     * @param calificacion Calificación a asignar.
      */
-
     public void setCalificacion(double calificacion) {
         this.calificacion = calificacion;
     }
 
     /**
-     * Metodo que devuelve el nombre del estudiante
-     * @return -> Nombre del estudiante
+     * Devuelve el nombre del estudiante.
+     *
+     * @return Nombre del estudiante.
      */
-
     public String getNombre() {
         return nombre;
     }
 
     /**
-     * Establece el nombre del estudiante
-     * @param nombre -> Nombre del estudiante
+     * Establece el nombre del estudiante.
+     *
+     * @param nombre Nombre a establecer.
      */
-
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
     /**
-     * Metodo que devuelve la edad del estudiante
-     * @return -> Edad del estudiante
+     * Devuelve la edad del estudiante.
+     *
+     * @return Edad del estudiante.
      */
     public int getEdad() {
         return edad;
     }
 
     /**
-     * Establece la edad del estudiante
-     * @param edad -> Edad del estudiante
+     * Establece la edad del estudiante.
+     *
+     * @param edad Edad a establecer.
      */
     public void setEdad(int edad) {
         this.edad = edad;
     }
 
     /**
-     * Metodo que devuelve la calificacion del estudiante
-     * @return -> Calificacion del estudiante
+     * Devuelve la calificación del estudiante.
+     *
+     * @return Calificación del estudiante.
      */
     public double getCalificacion() {
         return calificacion;
     }
 
     /**
-     * Establece la calificacion del estudiante
-     * @param calificacion -> Calificacion del estudiante
+     * Indica si el estudiante aprobó.
+     *
+     * @return true si calificación >= mínima, false de lo contrario.
      */
     public boolean aprobo() {
-        return calificacion >= 5.0;
+        return calificacion >= CALIFICACION_MINIMA;
     }
 
     /**
-     * Metodo que devuelve la edad escolar del estudiante
-     * @return -> Edad escolar del estudiante
+     * Devuelve una estimación de la edad escolar.
+     *
+     * @return Edad escolar calculada.
      */
     public int edadEscolar() {
-        return edad / 12;
+        return edad / DIVISOR_EDAD_ESCOLAR;
     }
 
     /**
-     * Metodo que devuelve la edad universitaria del estudiante
-     * @return -> Edad universitaria del estudiante
+     * Indica si el estudiante está en edad universitaria.
+     *
+     * @return true si edad >= 18, false de lo contrario.
      */
     public boolean esUniversitario() {
-        return edad >= 18;
+        return edad >= EDAD_UNIVERSITARIA;
     }
 
     /**
-     * Metodo que devuelve la edad universitaria del estudiante
-     * @return -> Edad universitaria del estudiante
+     * Devuelve los datos completos del estudiante.
+     *
+     * @return Información formateada del estudiante.
      */
     public String imprimirInformacion() {
         return "Nombre: " + nombre + ", Edad: " + edad + ", Calificación: " + calificacion;
     }
-
-    
 }
+

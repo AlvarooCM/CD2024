@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "javadoc2"
+    "liveServer.settings.multiRootWorkspaceName": "javadoc2",
+    "java.checkstyle.configuration": "${workspaceFolder}/checkstyle.xml"
 }

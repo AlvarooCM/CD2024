@@ -1,19 +1,22 @@
 package alvaro;
 
 /**
- * Clase Circulo
- * Esta clase representa un círculo con coordenadas (x, y) y un radio.
+ * Clase que representa un círculo con coordenadas (x, y) y un radio.
  */
 public class Circulo {
+
+    private static final double RADIO_DEFECTO = 0.0;
+
     private int x;
     private int y;
     private double radio;
 
     /**
-     * Establece el valor de las variables del objeto circulo
-     * @param valorX -> Indica el valor de la coordenada x
-     * @param valorY -> Indica el valor de la coordenada y
-     * @param valorRadio -> Indica el valor del radio del circulo
+     * Constructor del círculo.
+     *
+     * @param valorX Coordenada X.
+     * @param valorY Coordenada Y.
+     * @param valorRadio Radio del círculo.
      */
     public Circulo(int valorX, int valorY, double valorRadio) {
         establecerX(valorX);
@@ -22,91 +25,94 @@ public class Circulo {
     }
 
     /**
-     * Metodo que establece el valor de x
-     * 
-     * @param valorX Valor de x
+     * Establece la coordenada X.
+     *
+     * @param valorX Coordenada X.
      */
     public void establecerX(int valorX) {
-        x=valorX;
+        x = valorX;
     }
 
     /**
-     * Metodo que devuelve el valor de x
-     * 
-     * @return Devuelve valor x
+     * Devuelve la coordenada X.
+     *
+     * @return Coordenada X.
      */
     public int obtenerX() {
         return x;
     }
 
     /**
-     * Metodo que establece el valor de y
-     * @param valorY Valor de y
+     * Establece la coordenada Y.
+     *
+     * @param valorY Coordenada Y.
      */
     public void establecerY(int valorY) {
-        y=valorY;
+        y = valorY;
     }
 
     /**
-     * Metodo que devuelve el valor de y
-     * 
-     * @return Devuelve valor y
+     * Devuelve la coordenada Y.
+     *
+     * @return Coordenada Y.
      */
     public int obtenerY() {
         return y;
     }
 
     /**
-     * Metodo que establece el valor del radio
-     * 
-     * @param valorRadio Valor del radio
+     * Establece el radio.
+     *
+     * @param valorRadio Radio del círculo.
      */
     public void establecerRadio(double valorRadio) {
-
-        radio=(valorRadio < 0.0 ? 0.0 : valorRadio);
+        radio = valorRadio < 0.0 ? RADIO_DEFECTO : valorRadio;
     }
 
     /**
-     * Metodo que devuelve el valor del radio
-     * 
-     * @return Valor del radio
+     * Devuelve el radio.
+     *
+     * @return Radio del círculo.
      */
     public double obtenerRadio() {
         return radio;
     }
 
     /**
-     * Metodo que devuelve el valor del diametro 
-     * 
-     * @return Valor del diametro
+     * Devuelve el diámetro.
+     *
+     * @return Diámetro del círculo.
      */
     public double obtenerDiametro() {
         return radio * 2;
     }
 
     /**
-     * Metodo que devuelve el valor de la circunferencia
-     * 
-     * @return Valor del tamaño de la circunferencia
+     * Devuelve la circunferencia.
+     *
+     * @return Circunferencia del círculo.
      */
     public double obtenerCircunferencia() {
         return Math.PI * obtenerDiametro();
     }
 
     /**
-     * Metodo que devuelve el area del circulo
-     * 
-     * @return Valor del area
+     * Devuelve el área del círculo.
+     *
+     * @return Área del círculo.
      */
     public double obtenerArea() {
         return Math.PI * radio * radio;
     }
 
     /**
-     * Método que devulve una cadena de texto con atributos de la clase circulo
+     * Devuelve una cadena representando al círculo.
+     *
+     * @return Representación del círculo.
      */
     @Override
     public String toString() {
         return "Centro = [" + x + "," + y + "]; Radio = " + radio;
     }
 }
+

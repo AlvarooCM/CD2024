@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.45.1">
+<file name="/home/vagrant/Desktop/CD2024/ud04/javadoc2/src/main/java/alvaro/Estudiante.java">
+</file>
+<file name="/home/vagrant/Desktop/CD2024/ud04/javadoc2/src/main/java/alvaro/Persona.java">
+</file>
+<file name="/home/vagrant/Desktop/CD2024/ud04/javadoc2/src/main/java/alvaro/Circulo.java">
+</file>
+<file name="/home/vagrant/Desktop/CD2024/ud04/javadoc2/src/test/java/alvaro/CirculoTest.java">
+</file>
+<file name="/home/vagrant/Desktop/CD2024/ud04/javadoc2/src/test/java/alvaro/PersonaTest.java">
+</file>
+<file name="/home/vagrant/Desktop/CD2024/ud04/javadoc2/src/test/java/alvaro/EstudianteTest.java">
+</file>
+</checkstyle>

@@ -1,77 +1,71 @@
 package alvaro;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+/**
+ * Pruebas unitarias para la clase Circulo.
+ */
 public class CirculoTest {
-    
+
+    private static final int X = 1;
+    private static final int Y = 2;
+    private static final double RADIO = 3.0;
+    private static final int NUEVO_X = 10;
+    private static final int NUEVO_Y = 20;
+    private static final double NUEVO_RADIO = 30.0;
+    private static final double RADIO_INVALIDO = -1.0;
+    private static final double RADIO_CERO = 0.0;
+
     @Test
-    public void testConstructorAndGetters(){
+    public void testConstructorAndGetters() {
+        Circulo circulo = new Circulo(X, Y, RADIO);
 
-        Circulo circulo = new  Circulo(1, 2, 3);
-
-        assertEquals(1, circulo.obtenerX());
-        assertEquals(2, circulo.obtenerY());
-        assertEquals(3, circulo.obtenerRadio());
+        assertEquals(X, circulo.obtenerX());
+        assertEquals(Y, circulo.obtenerY());
+        assertEquals(RADIO, circulo.obtenerRadio());
     }
 
     @Test
-    public void testSetters(){
+    public void testSetters() {
+        Circulo circulo = new Circulo(X, Y, RADIO);
 
-        Circulo circulo = new  Circulo(1, 2, 3);
+        circulo.establecerX(NUEVO_X);
+        circulo.establecerY(NUEVO_Y);
+        circulo.establecerRadio(NUEVO_RADIO);
 
-        circulo.establecerX(10);
-        circulo.establecerY(20);
-        circulo.establecerRadio(30);
+        assertEquals(NUEVO_X, circulo.obtenerX());
+        assertEquals(NUEVO_Y, circulo.obtenerY());
+        assertEquals(NUEVO_RADIO, circulo.obtenerRadio());
 
-        assertEquals(10, circulo.obtenerX());
-        assertEquals(20, circulo.obtenerY());
-        assertEquals(30, circulo.obtenerRadio());
-
-        //Valores negativos del radio
-        circulo.establecerRadio(-1);
-        assertEquals(0.0, circulo.obtenerRadio());
+        circulo.establecerRadio(RADIO_INVALIDO);
+        assertEquals(RADIO_CERO, circulo.obtenerRadio());
     }
 
-
     @Test
-    public void testObtenerDiametro(){
-
-        Circulo circulo = new  Circulo(1, 2, 3);
-
-        assertEquals(6, circulo.obtenerDiametro());
-
+    public void testObtenerDiametro() {
+        Circulo circulo = new Circulo(X, Y, RADIO);
+        assertEquals(RADIO * 2, circulo.obtenerDiametro());
     }
 
-
     @Test
-    public void testObtenerCircunferencia(){
-
-        Circulo circulo = new  Circulo(1, 2, 3);
-
-        assertEquals(Math.PI * 6, circulo.obtenerCircunferencia());
-
+    public void testObtenerCircunferencia() {
+        Circulo circulo = new Circulo(X, Y, RADIO);
+        assertEquals(Math.PI * RADIO * 2, circulo.obtenerCircunferencia());
     }
 
-
     @Test
-    public void testObtenerArea(){
-
-        Circulo circulo = new  Circulo(1, 2, 3);
-
-        assertEquals(Math.PI * 3 * 3, circulo.obtenerArea());
-
+    public void testObtenerArea() {
+        Circulo circulo = new Circulo(X, Y, RADIO);
+        assertEquals(Math.PI * RADIO * RADIO, circulo.obtenerArea());
     }
 
-
     @Test
-    public void testToString(){
-
-        Circulo circulo = new  Circulo(1, 2, 3);
-
-        assertEquals("Centro = [" + circulo.obtenerX() +
-                    ","+circulo.obtenerY()+
-                    "]; Radio = " + circulo.obtenerRadio(), 
-                    circulo.toString());
+    public void testToString() {
+        Circulo circulo = new Circulo(X, Y, RADIO);
+        String esperado = "Centro = [" + X + "," + Y + "]; Radio = " + RADIO;
+        assertEquals(esperado, circulo.toString());
     }
 }
+
