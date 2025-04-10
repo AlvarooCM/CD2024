@@ -1,9 +1,9 @@
-#Wed Apr 09 09:48:19 CEST 2025
+#Wed Apr 09 10:03:55 CEST 2025
 /home/vagrant/Desktop/CD2024/ud04/javadoc2/src/main/java/alvaro/Circulo.java=1744184598893
 /home/vagrant/Desktop/CD2024/ud04/javadoc2/src/main/java/alvaro/Estudiante.java=1744184641468
 /home/vagrant/Desktop/CD2024/ud04/javadoc2/src/main/java/alvaro/Persona.java=1744184653964
-/home/vagrant/Desktop/CD2024/ud04/javadoc2/src/test/java/alvaro/CirculoTest.java=1744184862421
-/home/vagrant/Desktop/CD2024/ud04/javadoc2/src/test/java/alvaro/EstudianteTest.java=1744184887109
-/home/vagrant/Desktop/CD2024/ud04/javadoc2/src/test/java/alvaro/PersonaTest.java=1744184866617
-configuration*?=C032A287F011153146BBD2BD431168E196691EE6
-module-resource*?\:checkstyle/suppressions.xml=9A0719B7CA5C432547A8C6CF2BB1E2C423199743
+/home/vagrant/Desktop/CD2024/ud04/javadoc2/src/test/java/alvaro/CirculoTest.java=1744185463877
+/home/vagrant/Desktop/CD2024/ud04/javadoc2/src/test/java/alvaro/EstudianteTest.java=1744185479375
+/home/vagrant/Desktop/CD2024/ud04/javadoc2/src/test/java/alvaro/PersonaTest.java=1744185488951
+configuration*?=AF8AABD830220A4CA8F65DCCC7AAB9EF79B6FA7F
+module-resource*?\:checkstyle/suppressions.xml=DFA593FEC598A757879C7A14D63CF01C86EBDBB8
